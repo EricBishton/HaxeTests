@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+    <meta title="HaxeTests" package="com.bishton.haxetests" version="1.0.0" company="Bishton" />
+    <app main="Main" path="Export" file="Main.hx" />
+
+    <source path="src" />
+    <source path="/sources/IdeaProjects/HaxeTests/src" />
+
+    <haxelib name="openfl" />
+    <haxelib name="hxcpp" />
+    <haxelib name="hxcpp-debugger" version="git"/>
+
+    <!--
+    <assets path="Assets" rename="assets" exclude="openfl.svg" />
+    <icon path="Assets/openfl.svg" />
+    -->
+
+    <!-- Show the console -->
+    <set name="SHOW_CONSOLE" value="1" />
+    <set name="HXCPP_DEBUGGER" value="1" />
+
+</project>

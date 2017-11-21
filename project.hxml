@@ -1,0 +1,8 @@
+-java out
+#-x Main
+-main tivo.StringInitializeByFunctionBraces
+-cp src
+-dce no
+-debug
+-lib openfl
+-lib lime

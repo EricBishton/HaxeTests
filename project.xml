@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+
+    <meta title="HaxeTests" package="com.bishton.haxetests" version="1.0.0" company="Bishton" />
+    <app main="Main" path="Export" file="./HaxeTests" />
+    <!--
+    <app main="tivo.StringInitializeByFunctionInBraces" path="Export" file="tivo.StringInitializeByFunctionInBraces"/>
+    -->
+
+    <source path="src" />
+    <source path="/sandbox/github/HaxeFoundation/haxe/tests/unit/src"/>
+
+    <haxelib name="openfl"/>
+    <haxelib name="hxcpp" if="cpp"/>
+    <haxelib name="hxcpp-debugger" if="debug cpp"/>
+
+    <!--
+    <assets path="Assets" rename="assets" exclude="openfl.svg" />
+    <icon path="Assets/openfl.svg" />
+    -->
+
+    <!-- Show the console -->
+    <set name="SHOW_CONSOLE" value="1" />
+
+    <!-- Debugger -->
+    <haxedef name="HXCPP_DEBUG" if="debug" />
+    <haxedef name="HXCPP_DEBUGGER" value="1" if="debug" />
+    <haxedef name="HXCPP_CHECK_POINTER" if="debug" />  <!--makes null references cause errors-->
+    <haxedef name="HXCPP_STACK_VARS" if="debug" />    <!--if you want stack variables-->
+    <haxedef name="HXCPP_STACK_LINE" if="debug" />    <!--if you want line numbers-->
+    <haxedef name="HXCPP_STACK_TRACE" if="debug" />    <!--if you want stack traces-->
+
+</project>
