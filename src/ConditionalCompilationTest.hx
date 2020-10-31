@@ -4,7 +4,11 @@ using StringTools;
 
 class ConditionalCompilationTest {
     public function new() {
+        #if true
+        #elseif ~  // Should parse as '#else if ~'   ??
+        #end
     }
+
 #if (!false)
     public function something() {}
 #end

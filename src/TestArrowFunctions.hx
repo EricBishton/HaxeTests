@@ -27,7 +27,7 @@ class TestArrowFunctions extends Test {
     var f7:   (Int->Int)->(Int->Int);
     var f8:   Int -> String;
 
-    var arr: Array<Int->Int> = [];
+    var arr: Array<Int->Int> = [ ];
     var map: Map<Int,Int->Int> = new Map();
     var obj: { f : Int->Int };
 

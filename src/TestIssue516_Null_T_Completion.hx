@@ -1,6 +1,6 @@
 package ;
-class Null_T_Completion516Test {
-    public function new() {
+class TestIssue516_Null_T_Completion {
+    public function TestIssue516_Null_T_Completion() {
     }
 
     public function foo(): Null<String> return "";

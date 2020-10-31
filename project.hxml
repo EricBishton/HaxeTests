@@ -1,6 +1,7 @@
--java out
+#-java out
 #-x Main
--main tivo.StringInitializeByFunctionBraces
+#-main tivo.StringInitializeByFunctionBraces
+#-main Main
 -cp src
 -dce no
 -debug

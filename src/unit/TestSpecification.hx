@@ -144,7 +144,7 @@ class RttiClass1 {
 class RttiClass2 extends RttiClass1 { }
 
 class RttiClass3 extends RttiClass1 {
-    override function f():Int {
+    override function f( ):Int {
         return 33;
     }
 }

@@ -26,7 +26,7 @@ class TestIssue212 {
         // comment one word one word
         var a = "one word one word";
         /* A single-line block comment. */
-        var b:Array<String> = "foo-bar_foo.ololo foo bar";
+        var b:Array<String> = ["foo-bar_foo.ololo foo bar"];
         var c = 'single-quoted string';
         var d = "Tab\tdelimited\tstring.\nNewlines work too.  \bYeah!";
     }

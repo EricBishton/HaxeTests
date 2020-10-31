@@ -29,7 +29,7 @@ class Main {
     static inline var PLAYER_NAME = new Property<String>("playerName");
     static public function main() {
         var db = new Database();
-        var playerName = db.getProperty(PLAYER_NAME). ; // <- don't drop completion popup
+        var playerName = db.getProperty(PLAYER_NAME). // <- don't drop completion popup
         $type(playerName);
     }
 }

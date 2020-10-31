@@ -7,6 +7,8 @@ import debugger.HaxeRemote;
 
 import TestIssue232;
 import TestIssue528;
+//import fakelib.FakelibMain;
+//import nape.phys.Body;
 
 class Main {
 #if (debug && cpp)
@@ -23,6 +25,10 @@ class Main {
             startDebugger();
             TestIssue232.main();
             TestIssue528.testIssue528();
+
+//            var fakelib = new FakelibMain();
+            var body = new Body();
+
         } catch (e:Dynamic) {
             trace("Caught Dynamic:");
             trace(e);
@@ -67,4 +73,16 @@ class Main {
         #end
     }
 
+}
+
+class Test {
+    static function main() {
+        trace("Haxe is great!");
+
+//        var a = 1;
+//        switch(a) {
+//            case 1:
+//                break; // <--- Should show error bars.
+//        }
+    }
 }

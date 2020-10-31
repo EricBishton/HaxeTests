@@ -1,5 +1,8 @@
 package ;
 import openfl.Vector;
+using Std;
+
+using Std;
 
 class ArrowFunctionSyntaxTest {
     public function new() {
